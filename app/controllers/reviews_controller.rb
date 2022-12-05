@@ -15,6 +15,17 @@ class ReviewsController < ApplicationController
         # end
     end
 
+    def create
+        review = Review.create(review_params)
+        if review
+            associatedReview = Review.find_by(id: params[:book_id])
+            render json: associatedReview
+        else
+            render json: { errors: "validation errors"}, status: :unprocessable_entity
+        
+        end
+      end
+
     def update
         review = review_finder
         # if power
@@ -31,8 +42,8 @@ class ReviewsController < ApplicationController
             review = Review.find_by(id: params[:id])
         end
 
-        def book_params
-            params.permit(:, :author, :genre, :image, :price, :description)
+        def review_params
+            params.permit(:user_id, :book_id, :review)
           end
 
         def render_not_found_response
