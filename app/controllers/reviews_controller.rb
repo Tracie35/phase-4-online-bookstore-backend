@@ -26,7 +26,8 @@ class ReviewsController < ApplicationController
         end
       end
 
-    def update
+    #decide if we really need this 
+      def update
         review = review_finder
         # if power
             review.update!(book_params)
