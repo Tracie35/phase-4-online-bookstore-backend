@@ -5,25 +5,8 @@ class BooksController < ApplicationController
         render json: books
     end
 
-    def show
-        book = book_finder
-        # if power
-        render json: book
-        # else
-        # render json: { error: "Power not found" }, status: :not_found
-        # end
-    end
-
-    def update
-        book = book_finder
-        # if power
-            book.update!(book_params)
-            render json: book
-        # else
-        #     render json: { error: "Power not found" }, status: :not_found
-        # end
-    end
-
+      
+   
     private
 
         def book_finder

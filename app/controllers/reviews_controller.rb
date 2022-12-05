@@ -1,20 +1,7 @@
 class ReviewsController < ApplicationController
 
-    def index
-     reviews = Review.all
-     render json: reviews
-    end
-
-
-    def show
-        rview = review_finder
-        # if power
-        render json: review
-        # else
-        # render json: { error: "Power not found" }, status: :not_found
-        # end
-    end
-
+   
+   
     def create
         review = Review.create(review_params)
         if review
