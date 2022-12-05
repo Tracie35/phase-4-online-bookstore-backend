@@ -33,15 +33,19 @@ class UsersController < ApplicationController
         end
     end
 
-    def update
-        user = user_finder
-        # if power
-            user.update!(user_params)
-            render json: user
-        # else
-        #     render json: { error: "Power not found" }, status: :not_found
-        # end
+    def destroy
+        
     end
+
+    # def update
+    #     user = user_finder
+    #     # if power
+    #         user.update!(user_params)
+    #         render json: user
+    #     # else
+    #     #     render json: { error: "Power not found" }, status: :not_found
+    #     # end
+    # end
 
     private
 
