@@ -1,25 +1,25 @@
 class ReviewsController < ApplicationController
 
-    def index
-     reviews = Review.all
-     render json: reviews
-    end
+    # def index
+    #  reviews = Review.all
+    #  render json: reviews
+    # end
 
 
-    def show
-        rview = review_finder
-        # if power
-        render json: review
-        # else
-        # render json: { error: "Power not found" }, status: :not_found
-        # end
-    end
+    # def show
+    #     rview = review_finder
+    #     # if power
+    #     render json: review
+    #     # else
+    #     # render json: { error: "Power not found" }, status: :not_found
+    #     # end
+    # end
 
     def create
         review = Review.create(review_params)
         if review
-            associatedReview = Review.find_by(id: params[:book_id])
-            render json: associatedReview
+            associatedBook = Review.find_by(id: params[:book_id])
+            render json: associatedBook
         else
             render json: { errors: "validation errors"}, status: :unprocessable_entity
         
@@ -30,7 +30,7 @@ class ReviewsController < ApplicationController
       def update
         review = review_finder
         # if power
-            review.update!(book_params)
+            review.update!(review_params)
             render json: review
         # else
         #     render json: { error: "Power not found" }, status: :not_found
@@ -44,7 +44,7 @@ class ReviewsController < ApplicationController
         end
 
         def review_params
-            params.permit(:user_id, :book_id, :review)
+            params.permit(:user_id, :book_id, :comment)
           end
 
         def render_not_found_response
