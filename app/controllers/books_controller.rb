@@ -1,4 +1,5 @@
 class BooksController < ApplicationController
+    before_action :authorize
 
     def index
         books = Book.all
@@ -37,6 +38,10 @@ class BooksController < ApplicationController
         def render_not_found_response
             render json: { error: "Book not found" }, status: :not_found
         end
+
+         def authorize
+             return render json: { error: "Not authorized" }, status: :unauthorized unless session.include? :user_id
+           end
 
     
 end
