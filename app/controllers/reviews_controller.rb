@@ -6,14 +6,14 @@ class ReviewsController < ApplicationController
      end
 
 
-    # def show
-    #     rview = review_finder
-    #     # if power
-    #     render json: review
-    #     # else
-    #     # render json: { error: "Power not found" }, status: :not_found
-    #     # end
-    # end
+    def show
+        rview = review_finder
+        # if power
+        render json: review
+        # else
+        # render json: { error: "Power not found" }, status: :not_found
+        # end
+    end
 
     def create
         review = Review.create(review_params)

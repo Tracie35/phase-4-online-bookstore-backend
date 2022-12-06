@@ -6,6 +6,7 @@ class BooksController < ApplicationController
         render json: books
     end
 
+
     def show
         book = book_finder
         # if power
