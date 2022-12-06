@@ -27,8 +27,11 @@ class ReviewsController < ApplicationController
     
     def update
        review = review_finder
-       review.update!(update_review)
+       puts review.book_id
+       review.update!(review_params)
        render json: review
+    rescue ActiveRecord::InvalidRecord => e
+        render json: {error: e.record.errors.full_messages }, status: :unprocessable_entity
     
     end
 
