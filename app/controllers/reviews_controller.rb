@@ -7,16 +7,14 @@ class ReviewsController < ApplicationController
 
 
     def show
-        rview = review_finder
-        # if power
-        render json: review
-        # else
-        # render json: { error: "Power not found" }, status: :not_found
-        # end
+        book = review_finder
+        render json: book
     end
 
+
+
     def create
-        review = Review.create(review_params)
+        review = Review.create!(review_params)
         if review
             associatedBook = Review.find_by(id: params[:book_id])
             render json: associatedBook
@@ -26,21 +24,18 @@ class ReviewsController < ApplicationController
         end
       end
 
-    #decide if we really need this 
-      def update
-        review = review_finder
-        # if power
-            review.update!(review_params)
-            render json: review
-        # else
-        #     render json: { error: "Power not found" }, status: :not_found
-        # end
+    
+    def update
+       review = review_finder
+       review.update!(update_review)
+       render json: review
+    
     end
 
     private
 
         def review_finder
-            review = Review.find_by(id: params[:id])
+            review = Review.find(params[:id]) 
         end
 
         def review_params
@@ -50,6 +45,9 @@ class ReviewsController < ApplicationController
         def render_not_found_response
             render json: { error: "Review not found" }, status: :not_found
         end
+
+       
+
 
 
 end

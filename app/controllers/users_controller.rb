@@ -1,12 +1,12 @@
 class UsersController < ApplicationController
 
     def index
-        users = Users.all
+        users = User.all
         render json: users
     end
 
     def create
-        user = User.create(user_params)
+        user = User.create!(user_params)
         if user.valid?
             session[:user_id] = user.id
             render json: user, status: :created
@@ -14,15 +14,9 @@ class UsersController < ApplicationController
             render json: { errors: user.errors.full_messages }, status: :unprocessable_entity
     
         end
+    end
 
-    # def show
-    #     user = user_finder
-    #     # if power
-    #     render json: user
-    #     # else
-    #     # render json: { error: "Power not found" }, status: :not_found
-    #     # end
-    # end
+   
 
     def show
         user = User.find_by(id: session[:user_id])
@@ -33,19 +27,8 @@ class UsersController < ApplicationController
         end
     end
 
-    def destroy
-        
-    end
-
-    # def update
-    #     user = user_finder
-    #     # if power
-    #         user.update!(user_params)
-    #         render json: user
-    #     # else
-    #     #     render json: { error: "Power not found" }, status: :not_found
-    #     # end
-    # end
+    
+    
 
     private
 
@@ -54,7 +37,7 @@ class UsersController < ApplicationController
         end
 
         #need to determine which are the params we want for user
-        def user_params
+         def user_params
             params.permit(:username, :password, :password_confirmation)
           end
 
