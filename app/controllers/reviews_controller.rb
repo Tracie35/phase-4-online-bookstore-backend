@@ -1,4 +1,5 @@
 class ReviewsController < ApplicationController
+    rescue_from ActiveRecord::RecordNotFound, with: :render_not_found_response
 
      def index
       reviews = Review.all
@@ -33,6 +34,15 @@ class ReviewsController < ApplicationController
     rescue ActiveRecord::InvalidRecord => e
         render json: {error: e.record.errors.full_messages }, status: :unprocessable_entity
     
+    end
+
+
+    def destroy
+     review = review_finder
+     review.destroy
+     head :no_content
+    rescue ActiveRecord::InvalidRecord => e
+        render json: {error: e.record.errors.full_messages }, status: :unprocessable_entity
     end
 
     private
