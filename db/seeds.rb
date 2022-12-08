@@ -322,13 +322,13 @@ book1 = Book.create(
   book40 = Book.create(
     "title": "White Out",
     "author": "Danielle Girard" ,
-    "genre":"thriller",
+    "genre": "thriller",
     "image": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1573303664l/52394909._SX318_SY475_.jpg",
     "price": 2800,
     "description": "After surviving a car accident on an icy road in Hagen, North Dakota, Lily Baker regains consciousness with no idea where or who she is. Scattered Bible verses and the image of a man lying in a pool of blood haunt her memory.The same night of the accident, a young woman is murdered and tossed in a dumpster. Kylie Milliard, Hagen’s only detective, doesn’t immediately recognize the victim, but Kylie soon discovers that Lily and the dead woman share a dark past…if only Lily could remember what it was.Lily and Kylie both want answers. But Kylie has to play by the book. Lily has to play it safe. And the more Lily learns about her identity, the more she fears the truth."
     
   )
-     user1 = User.create(username:"Murithi", password:"wewe")
-     user2 =  User.create(username: "calvin" password: "kichwa")
+     user1 = User.create(username:"Murithi", password_digest:"wewe")
+     user2 =  User.create(username: "calvin", password_digest: "kichwa")
 
  
