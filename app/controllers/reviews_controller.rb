@@ -16,9 +16,9 @@ class ReviewsController < ApplicationController
 
     def create
         review = Review.create!(review_params)
+
         if review
-            associatedBook = Review.find_by(id: params[:book_id])
-            render json: associatedBook
+            render json: review
         else
             render json: { errors: "validation errors"}, status: :unprocessable_entity
         
