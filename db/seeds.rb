@@ -3,7 +3,7 @@ Book.destroy_all
 book1 = Book.create(
     "title": "The Eye of the World",
     "author": "Robert Jordan" ,
-    "genre":"fantasy",
+    "genre": "fantasy",
     "image": "https://m.media-amazon.com/images/I/51vYL46df+L._SX327_BO1,204,203,200_.jpg",
     "price":300,
     "description": "The Dark One, an evil force imprisoned inside a weakening cell, threatens the world. The Dragon Reborn, a reincarnated savior with powerful magical abilities, is born to a dying warrior woman on the slopes of a snowy mountain. Accompanied by a band of village youths, he seeks to defeat the Dark One, in The Wheel of Time, the sprawling, 14-book series. The depth of world-building is incredible, the characters indelible, and it comes to satisfying conclusion."
@@ -12,7 +12,7 @@ book1 = Book.create(
   book2 = Book.create(
     "title": "A Game of Thrones",
     "author": "George R.R. Martin" ,
-    "genre":"fantasy",
+    "genre": "fantasy",
     "image": "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1611858570-9780553573404.jpg?crop=1xw:1xh;center,top&resize=768:*",
     "price": 500,
     "description": "A civil war breaks out in the kingdom of Westeros, and House Stark finds itself embattled in a bitter conflict with the rest of the Seven Kingdoms. Meanwhile, a displaced queen gathers an army to retake her former home while an evil force from the icy North threatens to wipe out humanity. A Song of Ice and Fire is a gritty, realistic fantasy series where magic and mythical species take a back seat to political machinations and impeccable character development."
@@ -20,7 +20,7 @@ book1 = Book.create(
   book3 = Book.create(
     "title": "The Way of Kings",
     "author": "Brandon Sanderson" ,
-    "genre":"fantasy",
+    "genre": "fantasy",
     "image": "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1646860890-51h3KdPmE7L._SL500_.jpg?crop=1xw:1xh;center,top&resize=768:*",
     "price": 600,
     "description": "An assassin from a faraway land murders the Alethi King, Galivar. Five years later, Galivar’s brother, Dalinar, leads a war of attrition against the race of monstrous creatures known as the Parshendi who are blamed for the killing. Meanwhile, Kaladin, a disgraced former soldier turned slave, and Shallan, a noblewoman from a powerless family, seek to improve their fortunes in seemingly disconnected ways, while an ancient force of power intent on exterminating the world of men pulls the strings."
@@ -30,7 +30,7 @@ book1 = Book.create(
   book4 = Book.create(
     "title": "The Fellowship of the Ring",
     "author": "J.R.R. Tolkien" ,
-    "genre":"fantasy",
+    "genre": "fantasy",
     "image": "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1663778902-51HNV1J3UyL._SL500_.jpg?crop=1xw:1xh;center,top&resize=768:*",
     "price": 400,
     "description": "The armies of Men, Elves, and Dwarves square off against Sauren, a god-like villain who leads a tide of Orcs and Trolls bent on consuming the world. Frodo Baggins and his loyal friend Sam embark on a quest to deliver a magical ring to the fires of Mordor, guided by the wizard Gandolf. The Lord of the Rings is required reading for fantasy fanatics, notable for its rich and detailed world, satisfying story of loyalty and courage, and fanciful characters."
@@ -38,7 +38,7 @@ book1 = Book.create(
   book5 = Book.create(
     "title": "Sourcery",
     "author": "Terry Pratchett" ,
-    "genre":"fantasy",
+    "genre": "fantasy",
     "image": "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1663779184-41J0ak4O8BL._SL500_.jpg?crop=1xw:1xh;center,top&resize=768:*",
     "price": 1000,
     "description": "A magical staff wielded by a powerful sorcerer leads a hostile takeover of Unseen University and subverts its wizardly faculty into a campaign of world domination. The cowardly Rincewind, a wizard incapable of performing magic, and Canina the Hairdresser (daughter of Conan the Barbarian) attempt to come to the rescue with mixed, zany results. Terry Pratchett’s hilarious, inventive, and rich Discworld novels are an interconnected series of 41 books that can pretty much be read in any order."
@@ -46,7 +46,7 @@ book1 = Book.create(
   book6 = Book.create(
     "title": "Dune",
     "author": "Frank Herbert" ,
-    "genre":"fantasy",
+    "genre": "fantasy",
     "image": "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1634843523-9780441172719.jpg?crop=1xw:1xh;center,top&resize=768:*",
     "price": 1500,
     "description": "On the unforgiving desert planet Arrakis, where water is more valuable than gold and giant worms eat mining rigs whole, House Atreides attempts to ally with the local Fremen people to battle their historical foe, House Harkonnen, for supremacy. Paul Atreides is the young heir to his house, prophesied to lead humankind to a better future. Combining political intrigue, environmentalism, and mysticism, Dune remains relevant to conversations about consumption and stewardship of our planet nearly 60 years after publication."
@@ -54,7 +54,7 @@ book1 = Book.create(
   book7 = Book.create(
     "title": "The Fifth Season",
     "author": "N.K. Jemisin" ,
-    "genre":"fantasy",
+    "genre": "fantasy",
     "image": "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1626194417-9780316229296.jpg?crop=1xw:1xh;center,top&resize=768:*",
     "price": 900,
     "description": "In a dark, brutal world where magic users are feared and hated, those lucky enough to avoid being lynched by ignorant townspeople are forced to live as slaves, part of the Fulcrum, an organization tasked with limiting the damage caused by the frequent tectonic shifts that wrack the land. Meanwhile, three women in disparate stages of life, all of whom possess the forbidden gift of Oregeny, embark on dangerous journeys. The Fifth Season is a tragic and beautiful post-apocalyptic yarn."
@@ -62,7 +62,7 @@ book1 = Book.create(
   book8 = Book.create(
     "title": "The Lies of Locke",
     "author": "Scott Lynch" ,
-    "genre":"fantasy",
+    "genre": "fantasy",
     "image": "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1663783084-91pbvndj5fl-1663783077.jpg?crop=1xw:1xh;center,top&resize=768:*",
     "price": 1200,
     "description": "The island of Camorr is a city divided between powerful criminal gangs and a mercantile nobility. A sticky-fingered young orphan named Locke is raised by a con-man priest to lead a band of thieves, known as the Gentlemen Bastards, who pull off one elaborate scam after another, living above the law until a dark and violent competitor threatens everything Locke has gained. Lynch’s writing is fast-paced and witty, and readers will be drawn into the action from page one."
@@ -86,7 +86,7 @@ book1 = Book.create(
   book11 = Book.create(
     "title": "Beautiful Bastard",
     "author": "Christina Lauren" ,
-    "genre":"romance",
+    "genre": "romance",
     "image": "https://www.shereadsromancebooks.com/wp-content/uploads/2020/04/Beautiful-Bastard.jpg",
     "price": 1500,
     "description": "Despite the rumors, he’s never been one for a workplace hookup. But Chloe’s so tempting he’s willing to bend the rules–or outright smash them–if it means he can have her. All over the office. "
@@ -94,7 +94,7 @@ book1 = Book.create(
   book12 = Book.create(
     "title": "The Girl He Never Noticed",
     "author": "Neilani Alejandrino " ,
-    "genre":"romance",
+    "genre": "romance",
     "image": "https://img.wattpad.com/cover/24021854-288-k56800.jpg",
     "price": 2000,
     "description": "When billionaire bad boy Eros meets shy, nerdy Jade, he doesn't recognize her from his past. Will they be able to look past their secrets and fall in love again?"
@@ -102,7 +102,7 @@ book1 = Book.create(
   book13 = Book.create(
     "title": "I Kissed Shara Wheeler",
     "author": "Casey McQuiston " ,
-    "genre":"romance",
+    "genre": "romance",
     "image": "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1650551882-41KXqNMWltL._SL500_.jpg?crop=1.00xw:0.974xh;0,0.0160xh&resize=768:*",
     "price": 600,
     "description": "Chloe Green has spent her whole tenure at Willowgrove Christian Academy competing for valedictorian with the principal’s perfect daughter, Shara Wheeler. But when Shara kisses Chloe and then disappears on prom night, she leaves only a string of cryptic clues. Chloe forms an unlikely alliance with Rory, Shara’s misfit neighbor, and Smith, her quarterback boyfriend, to suss out where Shara has gone, ending with a dramatic finish no one will see coming."
@@ -110,7 +110,7 @@ book1 = Book.create(
   book14 = Book.create(
     "title": "After",
     "author": " Anna Todd" ,
-    "genre":"romance",
+    "genre": " romance",
     "image": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1438077259l/22557520._SY475_.jpg",
     "price": 2500,
     "description": "Tessa is a good girl with a sweet, reliable boyfriend back home. She’s got direction, ambition, and a mother who’s intent on keeping her that way.But she’s barely moved into her freshman dorm when she runs into Hardin. With his tousled brown hair, cocky British accent, tattoos, and lip ring, Hardin is cute and different from what she’s used to."
@@ -118,7 +118,7 @@ book1 = Book.create(
   book15 = Book.create(
     "title": "While We Were Dating",
     "author": "Jasmine Guillory" ,
-    "genre":"romance",
+    "genre": "romance",
     "image": "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1636472666-erotic-novels-while-we-were-dating-1636472633.jpg?crop=1xw:0.992578125xh;center,top&resize=980%3A%2A",
     "price": 3500,
     "description": "In While We Were Dating, an actress looking to be Hollywood's next big star and an advertising executive with a flirty side find themselves unexpectedly falling for each other, and their romance goes waaaay beyond just physical attraction."
@@ -126,7 +126,7 @@ book1 = Book.create(
   book16 = Book.create(
     "title": "The Kiss Quotient",
     "author": "Helen Hoang" ,
-    "genre":"romance",
+    "genre": "romance",
     "image": "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1636472889-erotic-novels-the-kiss-quotient-1636472864.jpg?crop=1xw:1xh;center,top&resize=980%3A%2A",
     "price": 3000,
     "description": "This swoon-worthy romance tells the story of Stella, an economist on the spectrum and the male escort she recruits to give her some sexual experience. Though Michael the escort attempts to keep his relationship with Stella as professional as possible, it isn't long before these two start falling for each other."
@@ -142,7 +142,7 @@ book1 = Book.create(
   book18 = Book.create(
     "title": "The Last to Vanish",
     "author": " Megan Miranda" ,
-    "genre":"mystery",
+    "genre": "mystery",
     "image": "https://m.media-amazon.com/images/I/51n8DlPHK7L.jpg",
     "price": 1500,
     "description": "New York Times bestselling author Megan Miranda returns with a gripping and propulsive thriller that opens with the disappearance of a journalist who is investigating a string of vanishings in the resort town of Cutter’s Pass—will its dark secrets finally be revealed?"
@@ -175,7 +175,7 @@ book1 = Book.create(
   book22 = Book.create(
     "title": "The Talented Mr. Ripley",
     "author": "Patricia Highsmith " ,
-    "genre":"mystery",
+    "genre": "mystery",
     "image": "https://m.media-amazon.com/images/I/41nSH658fNL.jpg",
     "price": 900,
     "description": "An American classic and the inspiration for the motion picture starring Matt Damon and Gwyneth Paltrow."
@@ -322,13 +322,14 @@ book1 = Book.create(
   book40 = Book.create(
     "title": "White Out",
     "author": "Danielle Girard" ,
-    "genre": "thriller",
+    "genre":"thriller",
     "image": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1573303664l/52394909._SX318_SY475_.jpg",
     "price": 2800,
     "description": "After surviving a car accident on an icy road in Hagen, North Dakota, Lily Baker regains consciousness with no idea where or who she is. Scattered Bible verses and the image of a man lying in a pool of blood haunt her memory.The same night of the accident, a young woman is murdered and tossed in a dumpster. Kylie Milliard, Hagen’s only detective, doesn’t immediately recognize the victim, but Kylie soon discovers that Lily and the dead woman share a dark past…if only Lily could remember what it was.Lily and Kylie both want answers. But Kylie has to play by the book. Lily has to play it safe. And the more Lily learns about her identity, the more she fears the truth."
     
   )
-     user1 = User.create(username:"Murithi", password_digest:"wewe")
-     user2 =  User.create(username: "calvin", password_digest: "kichwa")
+     user1 = User.create(username:"Murithi", password:"wewe")
+     user2 =  User.create(username: "calvin" password: "kichwa")
+
 
  
